@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IniActivity">
+    <include layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:id="@+id/layout_list_books"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Books You Own"
+                android:textStyle="bold"
+                android:textColor="#f15c2c"
+                android:textSize="40dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_books_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+</RelativeLayout>

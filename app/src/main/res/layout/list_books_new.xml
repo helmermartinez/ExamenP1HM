@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newbooks"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/IdBook"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iconimage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            app:srcCompat="@drawable/bookssss"></ImageView>
+
+        <TextView
+            android:id="@+id/cardTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="Prueba"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/iconimage"></TextView>
+        <TextView
+            android:id="@+id/cardAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otra prueba"
+            android:layout_below="@+id/cardTitulo"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/iconimage"></TextView>
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_below="@+id/cardAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha:"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/iconimage"></TextView>
+
+        <TextView
+            android:id="@+id/editora"
+            android:layout_below="@+id/iconimage"
+            android:layout_toRightOf="@+id/iconimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editora:"
+            android:layout_margin="10dp"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardfecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/cardAutor"
+            android:layout_toRightOf="@+id/fecha"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardeditora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editora"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/iconimage"
+            android:layout_toRightOf="@+id/editora"
+            android:textSize="18dp"></TextView>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

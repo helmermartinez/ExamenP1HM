@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialogLayout"
+    android:background="#F46639">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Books Title"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/dialogBookName"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textSize="15dp"></TextView>
+    <ImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/dialogBookName"
+        android:layout_margin="4dp"
+        android:src="@drawable/openbook"
+        android:padding="4dp"
+        android:layout_centerVertical="true"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogDescription"
+        android:text="Este es un libro de prueba"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/imageDialog"
+        android:layout_below="@+id/dialogBookName"
+        android:padding="3dp"
+        android:layout_margin="4dp"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogAutor"
+        android:text="Autor"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/imageDialog"
+        android:layout_below="@+id/dialogDescription"
+        android:padding="3dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="4dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/imageDialog">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Edit Book"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/dialogbtn"
+            android:id="@+id/dialogbtnEdit"></Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="View Book"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/dialogbtn"
+            android:id="@+id/dialogbtnView"></Button>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

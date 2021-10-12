@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backkkk"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#f15c2c"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="#F7941D"
+        android:text="Username">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/logusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#F7941D">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="#F7941D"
+        android:text="Password">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/logpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#F7941D"
+        android:inputType="textPassword">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="end"
+        android:text="Forget your password"
+        android:textColor="#F7941D">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/logbtn"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_marginLeft="100dp"
+        android:text="LOGIN"
+        android:textColor="@color/white">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/act_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an acount? Sing up"
+        android:gravity="end"
+        android:textColor="#f15c2c"
+        android:textStyle="bold"
+        android:layout_margin="10dp"></TextView>
+
+
+
+</LinearLayout>
